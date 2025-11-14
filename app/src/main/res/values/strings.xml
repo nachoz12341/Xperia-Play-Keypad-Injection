@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Xperia Play Keypad Injection</string>
+    <string name="app_title">Xperia Play Keypad Injection</string>
+    <string name="app_credits">Developed by nachoz12341 - https://github.com/nachoz12341</string>
+    <string name="app_description">This app allows you to force the internal gamepad open or closed without actually moving it. This is useful if you have a bad flex cable and movement is risky. Requires root!</string>
+    <string name="button_open">Open</string>
+    <string name="button_close">Close</string>
+    <string name="button_title">Force the gamepad state: </string>
+</resources>

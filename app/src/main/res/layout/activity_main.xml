@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="@string/app_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Content area -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:text="@string/app_description" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+            <!-- In your second row -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:text="@string/button_title" />
+
+            <Button
+                android:id="@+id/btn_sync"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:minWidth="0dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/button_open"
+                android:onClick="onButtonOpen"/>
+
+            <Button
+                android:id="@+id/btn_sync2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ellipsize="end"
+                android:minWidth="0dp"
+                android:onClick="onButtonClose"
+                android:singleLine="true"
+                android:text="@string/button_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:text="@string/app_credits" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
